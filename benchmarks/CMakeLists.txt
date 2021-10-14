@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(archiver)
+add_subdirectory(../archiver_main ${CMAKE_CURRENT_BINARY_DIR}/archiver_main)
+add_library(BENCHMARK STATIC benchmark.cpp)
+target_link_libraries(BENCHMARK ARCHIVER_MAIN)

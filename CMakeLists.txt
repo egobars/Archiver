@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+set (CMAKE_CXX_STANDARD 17)
+project("archiver")
+add_subdirectory(archiver_main ${CMAKE_CURRENT_BINARY_DIR}/archiver_main)
+add_executable(archiver main.cpp)
+target_link_libraries(archiver ARCHIVER_MAIN)
