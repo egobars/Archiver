@@ -17,7 +17,7 @@ You can launch Archiver by running
 from build directory.
 Arguments to this command you can see, if you run
 
-    ./archiver -h.
+    ./archiver -h
 
 # Benchmarks
 | File Type | Compress ratio | Compress speed | Decompress speed |
